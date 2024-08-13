@@ -57,7 +57,7 @@
     <!-- Init the ROS 2 control gazebo interface -->
     <xacro:if value="${use_sim_time}">
       <gazebo>
-        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+        <plugin name="gz_ros2_control::GazeboSimROS2ControlPlugin" filename="gz_ros2_control-system">
           <parameters>$(find tiago_description)/ros2_control/gazebo_controller_manager_cfg.yaml</parameters>
         </plugin>
       </gazebo>
@@ -69,7 +69,7 @@
       <!-- Execution env config -->
       <hardware>
         <xacro:if value="${use_sim_time}">
-          <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+          <plugin>gz_ros2_control/GazeboSimSystem</plugin>
 
         <!-- IMU sensor (only in simulation)-->
         <xacro:ros2_control_imu name="base_imu_sensor"/>

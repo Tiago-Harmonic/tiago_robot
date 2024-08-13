@@ -32,7 +32,7 @@
   <!-- pmb2, omni_base -->
   <xacro:arg name="base_type" default="pmb2"/>
 
-  <!-- no-laser, hokuyo, sick-551, sick-561, sick-571-->
+  no-laser, hokuyo, sick-551, sick-561, sick-571
   <xacro:arg name="laser_model" default="sick-571"/>
 
   <!-- false, true -->

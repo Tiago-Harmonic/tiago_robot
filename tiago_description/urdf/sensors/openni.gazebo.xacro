@@ -46,10 +46,10 @@
             <p2>0.00000001</p2>
           </distortion>
         </camera>
-        <plugin name="${name}_frame_controller" filename="libgazebo_ros_camera.so">
+        <!-- <plugin name="${name}_frame_controller" filename="libgazebo_ros_camera.so">
           <camera_name>${name}</camera_name>
           <ros>
-            <!-- <namespace>${name}</namespace>-->
+            <namespace>${name}</namespace>
             <remapping>${name}/image_raw:=${name}/rgb/image_raw</remapping>
             <remapping>${name}/camera_info:=${name}/rgb/camera_info</remapping>
             <remapping>${name}/depth/image_raw:=${name}/depth_registered/image_raw</remapping>
@@ -59,7 +59,8 @@
           <frame_name>${name}_rgb_optical_frame</frame_name>
           <min_depth>0.3</min_depth>
           <max_depth>8.0</max_depth>
-        </plugin>
+        </plugin> -->
+      
       </sensor>
     </gazebo>
 
