@@ -69,7 +69,7 @@ def declare_actions(
         },
     )
 
-    launch_description.add_action(default_controllers)
+    # launch_description.add_action(default_controllers)
 
     play_motion2 = include_scoped_launch_py_description(
         pkg_name="tiago_bringup",
@@ -82,7 +82,7 @@ def declare_actions(
         },
     )
 
-    launch_description.add_action(play_motion2)
+    # launch_description.add_action(play_motion2)
 
     twist_mux = include_scoped_launch_py_description(
         pkg_name="tiago_bringup",
@@ -92,7 +92,7 @@ def declare_actions(
         }
     )
 
-    launch_description.add_action(twist_mux)
+    # launch_description.add_action(twist_mux)
 
     robot_state_publisher = include_scoped_launch_py_description(
         pkg_name="tiago_description",
