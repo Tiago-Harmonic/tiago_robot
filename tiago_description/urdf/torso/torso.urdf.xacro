@@ -137,7 +137,7 @@
       <parent link="${name}_fixed_link" />
       <child link="${name}_lift_link" />
       <axis xyz="0 0 1" />
-      <limit effort="2000" lower="0" upper="0.35" velocity="${torso_max_vel}" />
+      <limit effort="2000" lower="-0.1" upper="0.35" velocity="${torso_max_vel}" />
       <calibration rising="0.0" />
       <dynamics damping="1000" />
       <safety_controller k_position="20" k_velocity="20" soft_lower_limit="0.0" soft_upper_limit="0.35" />
