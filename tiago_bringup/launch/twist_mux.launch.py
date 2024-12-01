@@ -62,7 +62,7 @@ def declare_actions(
     twist_mux = include_scoped_launch_py_description(
         'twist_mux', ['launch', 'twist_mux_launch.py'],
         launch_arguments={
-            'cmd_vel_out': 'mobile_base_controller/cmd_vel_unstamped',
+            'cmd_vel_out': 'cmd_vel_muxed',
             'config_locks': config_locks_file,
             'config_topics': config_topics_file,
             "config_joy": LaunchConfiguration("config_joy"),
