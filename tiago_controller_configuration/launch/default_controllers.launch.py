@@ -166,7 +166,7 @@ def declare_actions(
         ),
     )
 
-    launch_description.add_action(ft_sensor_controller)
+    # launch_description.add_action(ft_sensor_controller)
 
     # Configure LA dependant controllers
     launch_description.add_action(OpaqueFunction(
