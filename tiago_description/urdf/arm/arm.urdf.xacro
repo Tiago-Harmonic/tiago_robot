@@ -28,7 +28,7 @@
   <xacro:property name="arm_2_max_effort" value="43.0" />
   <xacro:property name="arm_3_max_effort" value="26" />
   <xacro:property name="arm_4_max_effort" value="26" />
-  <xacro:property name="arm_eps" value="${0.00 if no_safety_eps else 0.07}"/>
+  <xacro:property name="arm_eps" value="${-0.01 if no_safety_eps else -0.01}"/>
 
   <!-- INCLUDES -->
   <xacro:include filename="$(find pal_urdf_utils)/urdf/deg_to_rad.urdf.xacro" />
