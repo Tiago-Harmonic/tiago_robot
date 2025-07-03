@@ -47,7 +47,7 @@
             <p1>0.00000001</p1>
             <p2>0.00000001</p2>
           </distortion>
-          <optical_frame_id>head_front_camera_rgb_optical_frame</optical_frame_id>
+          <optical_frame_id>head_front_camera_depth_frame</optical_frame_id>
         </camera>
         <!-- <plugin name="${name}_frame_controller" filename="libgazebo_ros_camera.so">
           <camera_name>${name}</camera_name>
